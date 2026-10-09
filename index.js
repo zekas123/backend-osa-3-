@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001
 const app = express()
 
 app.use(express.json())
-app.use(express.static(path.join(__dirname, '../frontend/dist')))
+app.use(express.static(path.join(__dirname, 'dist')))
 
 
 morgan.token('body', (req) => {
